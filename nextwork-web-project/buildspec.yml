@@ -1,9 +1,5 @@
 version: 0.2
 
-env:
-  variables:
-    CODEBUILD_SRC_DIR: "nextwork-web-project"
-
 phases:
   install:
     runtime-versions:
@@ -17,8 +13,11 @@ phases:
   build:
     commands:
       - echo "Build started on $(date)"
+      - cd nextwork-web-project
+      - ls -la
       - mvn -s settings.xml clean package
 
 artifacts:
+  base-directory: nextwork-web-project
   files:
     - target/*.war
