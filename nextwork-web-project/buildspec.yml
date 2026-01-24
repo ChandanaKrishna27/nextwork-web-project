@@ -1,5 +1,9 @@
 version: 0.2
 
+env:
+  variables:
+    CODEBUILD_SRC_DIR: "nextwork-web-project"
+
 phases:
   install:
     runtime-versions:
