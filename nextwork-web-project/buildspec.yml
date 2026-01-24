@@ -14,6 +14,7 @@ phases:
     commands:
       - echo "Build started on $(date)"
       - cd nextwork-web-project
+      - echo "Inside: $(pwd)"
       - ls -la
       - mvn -s settings.xml clean package
 
@@ -21,3 +22,6 @@ artifacts:
   base-directory: nextwork-web-project
   files:
     - target/*.war
+    - appspec.yml
+    - scripts/**/*
+  discard-paths: no
