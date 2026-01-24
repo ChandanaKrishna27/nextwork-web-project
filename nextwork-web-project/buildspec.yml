@@ -7,14 +7,14 @@ phases:
 
   pre_build:
     commands:
-      - echo "Getting CodeArtifact token..."
+      - echo Getting CodeArtifact token...
       - export CODEARTIFACT_AUTH_TOKEN=$(aws codeartifact get-authorization-token --domain nextwork --domain-owner 602310134577 --region us-east-2 --query authorizationToken --output text)
 
   build:
     commands:
-      - echo "Build started on $(date)"
+      - echo Build started on $(date)
       - cd nextwork-web-project
-      - echo "Inside: $(pwd)"
+      - pwd
       - ls -la
       - mvn -s settings.xml clean package
 
