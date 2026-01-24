@@ -1,71 +1,50 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <title>NextWork Deployment Success</title>
+    <title>Deployment Success</title>
     <style>
         body {
-            font-family: "Segoe UI", Arial, sans-serif;
-            background: linear-gradient(135deg, #f8f9ff, #eef2ff);
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: #f4f6f8;
             margin: 0;
             padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
         }
 
-        .container {
-            max-width: 800px;
-            margin: 80px auto;
+        .card {
             background: #ffffff;
-            padding: 50px;
-            border-radius: 12px;
-            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.08);
+            padding: 40px 50px;
+            border-radius: 8px;
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
             text-align: center;
+            max-width: 500px;
         }
 
         h1 {
-            color: #2b2d42;
-            font-size: 36px;
-            margin-bottom: 10px;
-        }
-
-        h2 {
-            color: #4a4e69;
-            font-weight: normal;
-            margin-bottom: 30px;
+            margin-bottom: 15px;
+            font-size: 32px;
+            color: #1f2933;
         }
 
         p {
-            color: #555;
             font-size: 18px;
+            color: #4a5568;
             line-height: 1.6;
-        }
-
-        .highlight {
-            margin-top: 30px;
-            font-size: 20px;
-            color: #3a86ff;
-            font-weight: bold;
-        }
-
-        .footer {
-            margin-top: 40px;
-            font-size: 14px;
-            color: #888;
+            margin: 0;
         }
     </style>
 </head>
 <body>
 
-<div class="container">
-    <h1>🚀 Hello NextWork!</h1>
-    <h2>Deployment Successful</h2>
+    <div class="card">
+        <h1>Wohooooo 🎉</h1>
+        <p>
+            I am Chandana, and I have successfully deployed this application.
+        </p>
+    </div>
 
-    <p>
-        This is my <strong>NextWork web application</strong>, and it’s up and running perfectly on the cloud.
-    </p>
-
-    <p>
-        If you are seeing this page, it means my latest changes were successfully built,
-        packaged, and deployed using a complete DevOps pipeline.
-    </p>
-
-    <div clas
+</body>
+</html>
