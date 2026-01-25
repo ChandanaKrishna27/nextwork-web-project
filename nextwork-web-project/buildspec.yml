@@ -13,13 +13,11 @@ phases:
   build:
     commands:
       - echo Build started on $(date)
-      - cd nextwork-web-project
       - pwd
       - ls -la
       - mvn -s settings.xml clean package
 
 artifacts:
-  base-directory: nextwork-web-project
   files:
     - target/*.war
     - appspec.yml
